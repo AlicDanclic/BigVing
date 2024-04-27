@@ -101,3 +101,15 @@
     font-size:16px;
     outline:none;
 }
+
+.selects{
+    height: 40px;
+    background:#317ef3;
+    color:#fff;
+}
+
+.option{
+    height: 40px;
+    background: #787878;
+    color:#fff;
+}

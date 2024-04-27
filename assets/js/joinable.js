@@ -58,7 +58,14 @@ document.onkeydown = function() {
 	}
 }
 
+function getSelectedValue(name){
+	var obj = document.getElementById(name);
+	return obj.value;
+}
+
 function Search() {
-    var url = 'https://cn.bing.com/search?q='+oInp.value;
+	var headers = getSelectedValue('ways');
+    var url = 'https://'+ headers +oInp.value;
 	window.open(url);
 }
+
